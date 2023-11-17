@@ -10,8 +10,8 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Footer from './Footer';
-import Header from './Header';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 
 const cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -27,7 +27,7 @@ const theme = createTheme({
 // do podjebania
 // https://github.com/mui/material-ui/blob/v5.14.18/docs/data/material/getting-started/templates/blog/Blog.js
 
-export default function App() {
+export default function Home() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />

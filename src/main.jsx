@@ -1,16 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App'
-import Office from './Office'
-import About from './About'
-import Contact from './Contact'
-import News from './News'
+import Home from './pages/Home'
+import Office from './pages/Office'
+import About from './pages/About'
+import Contact from './pages/Contact'
+import News from './pages/News'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Home />,
   },
   {
     path: "/office",
