@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Grid, Card, CardMedia, CardContent, Typography } from "@mui/material";
 
-export default function ImgCard({ heading, content, imgSrc }) {
+export default function ImgCard({ heading, content, additionalInfo, imgSrc }) {
   return (
     <Grid item xs={12} sm={6} md={4}>
       <Card
@@ -14,8 +14,7 @@ export default function ImgCard({ heading, content, imgSrc }) {
         <CardMedia
           component="div"
           sx={{
-            // 16:9
-            pt: "56.25%",
+            pt: "100%",
           }}
           image={imgSrc}
         />
@@ -24,6 +23,7 @@ export default function ImgCard({ heading, content, imgSrc }) {
             {heading}
           </Typography>
           <Typography>{content}</Typography>
+          <Typography color="primary">{additionalInfo}</Typography>
         </CardContent>
       </Card>
     </Grid>
