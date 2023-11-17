@@ -27,28 +27,21 @@ export default function Hero({ imgSrc, title, description }) {
           backgroundColor: "rgba(0, 0, 0, 0.5)",
         }}
       />
-      <Grid container>
-        <Grid item md={6}>
-          <Box
-            sx={{
-              position: "relative",
-              p: { xs: 3, md: 8 },
-              pr: { md: 0 },
-            }}
-          >
-            <Typography
-              component="h1"
-              variant="h1"
-              color="inherit"
-              gutterBottom
-            >
-              {title}
-            </Typography>
-            <Typography variant="h4" color="inherit" paragraph>
-              {description}
-            </Typography>
-          </Box>
-        </Grid>
+      <Grid>
+        <Box
+          sx={{
+            position: "relative",
+            p: { xs: 3, md: 7 },
+            pr: { md: 0 },
+          }}
+        >
+          <Typography component="h1" variant="h1" color="inherit" gutterBottom>
+            {title}
+          </Typography>
+          <Typography variant="h4" color="inherit" paragraph>
+            {description}
+          </Typography>
+        </Box>
       </Grid>
     </Paper>
   );
