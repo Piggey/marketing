@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
       <Typography variant="h6" align="center" gutterBottom>
-        Footer
+        Projekt strony kancelarii prawnej
       </Typography>
       <Typography
         variant="subtitle1"
@@ -13,7 +13,7 @@ export default function Footer() {
         color="text.secondary"
         component="p"
       >
-        Something here to give the footer a purpose!
+        Marketing internetowy - Politechnika Łódzka
       </Typography>
       <Copyright />
     </Box>
