@@ -1,9 +1,9 @@
-import { Box, Typography } from "@mui/material"
-import Copyright from "./Copyright"
+import { Box, Typography } from "@mui/material";
+import Copyright from "./Copyright";
 
 export default function Footer() {
   return (
-    <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
+    <Box sx={{ bgcolor: "background.paper", p: 6 }} component="footer">
       <Typography variant="h6" align="center" gutterBottom>
         Projekt strony kancelarii prawnej
       </Typography>
@@ -17,5 +17,5 @@ export default function Footer() {
       </Typography>
       <Copyright />
     </Box>
-  )
+  );
 }
