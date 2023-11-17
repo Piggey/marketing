@@ -3,7 +3,7 @@ import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
-
+import Hero from "../components/Hero";
 
 // do podjebania
 // https://github.com/mui/material-ui/blob/v5.14.18/docs/data/material/getting-started/templates/blog/Blog.js
@@ -11,6 +11,7 @@ import Container from "@mui/material/Container";
 export default function Home() {
   return (
     <main>
+      <Hero imgSrc="https://placekitten.com/800/400" title="siema" description="huju" />
       <Box
         sx={{
           bgcolor: "background.paper",
