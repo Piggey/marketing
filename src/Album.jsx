@@ -24,6 +24,9 @@ const theme = createTheme({
   },
 });
 
+// do podjebania
+// https://github.com/mui/material-ui/blob/v5.14.18/docs/data/material/getting-started/templates/blog/Blog.js
+
 export default function Album() {
   return (
     <ThemeProvider theme={theme}>
