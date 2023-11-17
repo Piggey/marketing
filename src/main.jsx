@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Home from "./pages/Home";
-import Office from "./pages/Office";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import News from "./pages/News";
@@ -14,14 +13,6 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Home />
-      </Layout>
-    ),
-  },
-  {
-    path: "/office",
-    element: (
-      <Layout>
-        <Office />
       </Layout>
     ),
   },
