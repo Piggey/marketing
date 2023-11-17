@@ -11,17 +11,17 @@ export default function Header() {
           </Link>
         </Typography>
         <Box sx={{ flexGrow: 1 }} />
-        <Button component={Link} to="/about" color="inherit">
-          O Nas
-        </Button>
         <Button component={Link} to="/office" color="inherit">
           Kancelaria
         </Button>
-        <Button component={Link} to="/contact" color="inherit">
-          Kontakt
-        </Button>
         <Button component={Link} to="/news" color="inherit">
           Aktualności
+        </Button>
+        <Button component={Link} to="/about" color="inherit">
+          O Nas
+        </Button>
+        <Button component={Link} to="/contact" color="inherit">
+          Kontakt
         </Button>
       </Toolbar>
     </AppBar>
