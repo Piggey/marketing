@@ -18,7 +18,7 @@ export default function ImgCard({ heading, content, additionalInfo, imgSrc }) {
           }}
           image={imgSrc}
         />
-        <CardContent sx={{ flexGrow: 1 }}>
+        <CardContent sx={{ flexGrow: 1, mb: -2 }}>
           <Typography gutterBottom variant="h5" component="h2">
             {heading}
           </Typography>
