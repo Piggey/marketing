@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Typography, Paper, Box, Grid } from "@mui/material";
 
-export default function Hero({ imgSrc, title, description }) {
+export default function Hero({ imgSrc, imgYOffset, title, description }) {
   return (
     <Paper
       sx={{
@@ -9,13 +9,13 @@ export default function Hero({ imgSrc, title, description }) {
         backgroundColor: "grey.800",
         color: "white",
         mb: 4,
+        height: 400,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
+        backgroundPositionY: `${imgYOffset}`,
         backgroundImage: `url(${imgSrc})`,
       }}
     >
-      {/* Increase the priority of the hero background image */}
       {<img style={{ display: "none" }} src={imgSrc} alt={title} />}
       <Box
         sx={{
@@ -31,8 +31,7 @@ export default function Hero({ imgSrc, title, description }) {
         <Box
           sx={{
             position: "relative",
-            p: { xs: 3, md: 7 },
-            pr: { md: 0 },
+            p: { xs: 3, md: 3 },
           }}
         >
           <Typography component="h1" variant="h1" color="inherit" gutterBottom>
