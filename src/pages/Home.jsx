@@ -11,7 +11,7 @@ import Hero from "../components/Hero";
 export default function Home() {
   return (
     <main>
-      <Hero imgSrc="https://placekitten.com/800/400" title="Kancelaria Prawna" description={"Polska Kancelaria, Globalny Zasięg, Indywidualne Podejście"} />
+      <Hero imgSrc="src/assets/home.jpg" imgYOffset="14%" title="Kancelaria Prawna" description={"Polska Kancelaria, Globalny Zasięg, Indywidualne Podejście"} />
       <Box
         sx={{
           bgcolor: "background.paper",
