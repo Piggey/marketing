@@ -9,6 +9,9 @@ const theme = createTheme({
       main: "#8b0000",
     },
   },
+  typography: {
+    fontFamily: "Roboto"
+  },
 });
 
 export default function Layout(props) {

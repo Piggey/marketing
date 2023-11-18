@@ -34,10 +34,10 @@ export default function Hero({ imgSrc, imgYOffset, title, description }) {
             p: { xs: 3, md: 3 },
           }}
         >
-          <Typography component="h1" variant="h1" color="inherit" gutterBottom>
+          <Typography component="h1" variant="h1" color="inherit" fontFamily="Montserrat" gutterBottom>
             {title}
           </Typography>
-          <Typography variant="h4" color="inherit" paragraph>
+          <Typography variant="h4" color="inherit" fontFamily="Montserrat" paragraph>
             {description}
           </Typography>
         </Box>
