@@ -11,7 +11,7 @@ export default function Article({ author, title, content, date, tags }) {
       <Divider />
       <Typography variant="h6">{`${date} - ${author}`}</Typography>
       {tags.map((tag, index) => (
-        <React.Fragment key={tag}>
+        <React.Fragment key={index}>
           <Typography color={"primary"} sx={{ display: "inline" }}>{tag}</Typography>
           {index < tags.length - 1 && <span>, </span>}
         </React.Fragment>

@@ -9,9 +9,9 @@ export default function About() {
       <Hero imgSrc="src/assets/about.jpeg" imgYOffset="26%" title="O nas" description="Poznaj nasz zespół" />
       <Container sx={{ py: 8 }}>
         <Grid container spacing={4}>
-          {team.map((member) => (
+          {team.map((member, index) => (
             <ImgCard
-              key={member}
+              key={index}
               heading={member.name}
               content={member.description}
               additionalInfo={member.phoneNumber}
